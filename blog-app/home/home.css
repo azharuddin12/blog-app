@@ -1,0 +1,279 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+.nav {
+  width: 100%;
+  padding: 1em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(133, 9, 133);
+  color: white;
+}
+.webName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.jump {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.jump a {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+}
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+}
+.dashboard {
+  padding: 1em 0.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  margin-bottom: 1em;
+}
+.formContainer {
+  width: 600px;
+  padding: 3em;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+  border: 1px solid whitesmoke;
+  margin: 1em;
+}
+.blogForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+}
+.blogFormTitle {
+  padding: 0.3em 0.7em;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border: 1px solid rgb(230, 230, 230);
+  outline-color: blue;
+  text-transform: capitalize;
+}
+.blogFormText {
+  height: 6em;
+  padding: 0.3em;
+  font-size: 1.2rem;
+  border-radius: 3px;
+  outline: none;
+  border: 1px solid rgb(230, 230, 230);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+.blogFormBtn {
+  max-width: 11em;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border-radius: 7px;
+  background: blue;
+  color: white;
+  border: none;
+}
+.myBlog {
+  margin: 0.7em 1em 0.2em;
+}
+#blog {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.blogSection {
+  padding: 1.5em;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5em;
+  border: 1px solid whitesmoke;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.233);
+  width: 570px;
+  margin: 1em;
+}
+.head {
+  display: flex;
+  gap: 0.8em;
+  align-items: center;
+}
+.userImg {
+  /* background: rgb(212, 212, 212); */
+  border: 1px solid #ccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 3em;
+  height: 3em;
+  border-radius: 5px;
+}
+.head2Div {
+}
+.title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.displayNameAndDate {
+  display: flex;
+  gap: 0.5;
+}
+.displayName {
+  font-size: 1rem;
+  color: rgb(150, 150, 150);
+}
+.dateString {
+  font-size: 1rem;
+  color: rgb(150, 150, 150);
+}
+.inputText {
+  padding: 1em 0.5em;
+  font-size: 1.1rem;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #868686;
+}
+.btnDiv {
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  gap: 0.7em;
+}
+.btn {
+  font-size: 1.1rem;
+  background: none;
+  border: none;
+  margin: 3px;
+  color: blue;
+}
+.username a {
+  color: white;
+  text-decoration: none;
+}
+#username a {
+  color: white;
+  text-decoration: none;
+}
+
+.greetings {
+  padding: 0.7em 1.5em;
+  font-size: 1.8rem;
+  border: 1px solid whitesmoke;
+}
+.button {
+  width: 150px;
+  background: none;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.userBlogSection {
+  display: flex;
+  gap: 3em;
+}
+.picture {
+  width: 300px;
+  min-width: 246px;
+  height: 293px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 12px;
+  border: 1px solid blue;
+}
+.pictureDiv {
+  width: 300px;
+  height: 100%;
+}
+@media screen and (min-width: 600px) {
+  .webName {
+    font-size: 2rem;
+  }
+}
+
+.editFormDiv {
+  display: none;
+  position: sticky;
+  position: -webkit-sticky;
+  left: 10vw;
+  bottom: 25vh;
+  width: 80%;
+  /* max-width: 70vw; */
+  background-color: rgb(51, 52, 53);
+  padding: 0.8em;
+  border-radius: 8px;
+}
+.editForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+}
+.editFormInput {
+  font-size: 1.2rem;
+  border-radius: 5px;
+  padding: 0.5em;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: auto;
+}
+.editFormButton {
+  background: white;
+  border: none;
+  font-size: 1.2rem;
+  padding: 0.5em;
+  cursor: pointer;
+  border-radius: 7px;
+}
+.cross {
+  color: white;
+}
+@media screen and (max-width: 920px) {
+  .userBlogSection {
+    flex-direction: column-reverse;
+    gap: 1.6em;
+  }
+}
+
+.alertBox {
+  position: sticky;
+  bottom: 70%;
+  left: 80%;
+  width: auto;
+  font-size: 1.2rem;
+  padding: 0.2em 0.8rem 0.2rem 0.8rem;
+  border-radius: 5px;
+  color: white;
+  visibility: hidden;
+}
+.red {
+  visibility: visible;
+  background: rgb(243, 40, 40);
+}
+.blue {
+  visibility: visible;
+  background: blue;
+}
+.green {
+  visibility: visible;
+  background: #56ab2f;
+}
+.black {
+  visibility: visible;
+  background: black;
+}

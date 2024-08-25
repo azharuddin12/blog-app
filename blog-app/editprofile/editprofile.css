@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+.nav {
+  width: 100%;
+  padding: 1em 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(133, 9, 133);
+  color: white;
+}
+.webName {
+  font-size: 1.2rem;
+  font-weight: 600;
+  font-family: "Raleway", sans-serif;
+}
+.username a {
+  color: white;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+.jump {
+  font-size: 1.2rem;
+}
+.rightSide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+}
+.dashboard {
+  padding: 1em 0.5em;
+  border: 1px solid whitesmoke;
+  margin-bottom: 1em;
+}
+.profileSection {
+  display: flex;
+  flex-direction: column;
+  width: 715px;
+  height: 740px;
+  margin: 3em 6em;
+  padding: 1.5em;
+  border: 1px solid#DEE2E6;
+}
+.displayName {
+  margin: 0.8em 0px;
+}
+.displayName input {
+  border: none;
+  padding: 0.3em;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.displayName i {
+  color: blueviolet;
+  cursor: pointer;
+}
+.password {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  margin-top: 1em;
+}
+.password input {
+  width: 14em;
+  padding: 0.3em;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid#DEE2E6;
+  outline-color: blueviolet;
+}
+.updatePasswordBtn {
+  width: 10em;
+  padding: 10px 16px;
+  background: blue;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.userImg {
+  /* border: 1px solid red; */
+  width: 350px;
+}
+.userImg input {
+  display: none;
+}
+.file-upload {
+  /* border: 1px solid #ccc; */
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: blueviolet;
+  font-size: 1.3rem;
+  position: relative;
+  bottom: 2em;
+  left: 14em;
+}
+.image div {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 304px;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.226);
+  border-radius: 12px;
+}
+.opacityDown {
+  opacity: 0.3;
+}
+.uploadProgress {
+  height: 1.5em;
+  color: black;
+  display: none;
+}
+.progressPercent {
+  color: #353434;
+  font-size: 1.07rem;
+  display: none;
+}
+.uploadBtn {
+  font-size: 1.2rem;
+  padding: 0.5em;
+  color: white;
+  background: blue;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .webName {
+    font-size: 2rem;
+  }
+}

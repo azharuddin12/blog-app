@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav" id="signupNav">
+      <div class="webName">Personal Blogging App</div>
+      <div class="jump"><a href="../index.html">Login</a></div>
+    </nav>
+    <div class="hero">
+      <div class="heading">Signup</div>
+      <div class="formContainer">
+        <form class="form" id="signupForm">
+          <div class="box" id="usernameBox">
+            <!-- <span class="boxSpan">FirstName</span> -->
+            <input
+              type="text"
+              placeholder="FirstName"
+              minlength="3"
+              maxlength="20"
+              required
+              id="firstname"
+            />
+          </div>
+          <div class="box" id="usernameBox">
+            <!-- <span class="boxSpan">FirstName</span> -->
+            <input
+              type="text"
+              placeholder="LastName"
+              minlength="1"
+              maxlength="20"
+              required
+              id="lastname"
+            />
+          </div>
+          <div class="box" id="emailBox">
+            <!-- <span class="boxSpan">Email</span> -->
+            <input
+              type="email"
+              id="signupEmail"
+              required
+              placeholder="abc@gmail.com"
+            />
+          </div>
+          <div class="box" id="passwordBox">
+            <!-- <span class="boxSpan">Password</span> -->
+            <input
+              type="password"
+              id="signupPassword"
+              required
+              placeholder="Password"
+            />
+          </div>
+          <div class="box" id="confirmPasswordBox">
+            <!-- <span class="boxSpan">Password</span> -->
+            <input
+              type="password"
+              id="signupConfirmPassword"
+              placeholder="Confirm Password"
+              required
+            />
+          </div>
+          <button type="submit" class="btn" id="signupBtn">Signup</button>
+        </form>
+      </div>
+    </div>
+    <span class="alertBox" id="alertBox"></span>
+    <script type="module" src="./signup.js"></script>
+  </body>
+</html>

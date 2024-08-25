@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav" id="loginNav">
+      <div class="webName">Personal Blogging App</div>
+      <div class="jump"><a href="./signup/signup.html">Signup</a></div>
+    </nav>
+    <div class="hero">
+      <div class="heading">Login</div>
+      <div class="formContainer" id="loginFormContainer">
+        <form class="form" id="loginForm">
+          <div class="box" id="emailBox">
+            <!-- <span class="boxSpan">Email</span> -->
+            <input
+              type="email"
+              id="loginEmail"
+              required
+              placeholder="abc@gmail.com"
+            />
+          </div>
+          <div class="box" id="passwordBox">
+            <!-- <span class="boxSpan">Password</span> -->
+            <input
+              type="password"
+              id="loginPassword"
+              required
+              placeholder="Password"
+            />
+          </div>
+
+          <button type="submit" class="btn" id="loginBtn">Login</button>
+        </form>
+      </div>
+    </div>
+    <span class="alertBox" id="alertBox"></span>
+    <script type="module" src="./login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="editprofile.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="nav" id="signupNav">
+      <div class="webName">Personal Blogging App</div>
+      <div class="rightSide">
+        <div class="username" id="username">
+          <a href="../home/home.html">Back to dashboard</a>
+        </div>
+        <div class="jump" id="logout">Logout</div>
+      </div>
+    </nav>
+
+    <div class="dashboard">
+      <h1>Profile</h1>
+    </div>
+    <div class="profileSection">
+      <div class="userImg">
+        <div class="image">
+          <div id="profileimg"></div>
+        </div>
+        <label for="fileInput" id="fileUpload" class="file-upload">
+          <input type="file" id="fileInput" />
+
+          <i class="bi bi-pen-fill"></i>
+        </label>
+        <progress
+          value="0"
+          max="100"
+          id="uploadProgress"
+          class="uploadProgress"
+        ></progress
+        ><span id="progressPercent" class="progressPercent"></span>
+        <button id="uploadBtn" class="uploadBtn">Upload</button>
+      </div>
+      <form id="updateDisplayNameForm">
+        <div class="displayName">
+          <input type="text" id="displayName" disabled />
+          <i class="bi bi-pen-fill" id="editPenForDisplayName"></i>
+        </div>
+      </form>
+      <h2>Password</h2>
+      <form id="updatePasswordForm">
+        <div class="password">
+          <input
+            type="password"
+            id="oldPassword"
+            placeholder="Old Password"
+            required
+          />
+          <input type="password" id="newPassword" placeholder="New Password" />
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confirm Password"
+          />
+          <button type="submit" class="updatePasswordBtn">
+            Update Password
+          </button>
+        </div>
+      </form>
+    </div>
+    <script type="module" src="./editprofile.js"></script>
+  </body>
+</html>
